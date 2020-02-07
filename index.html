@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!-- 本着不重复造轮子的精神，本网页编写参考了http://supersmartbitcoin.com -->
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Note there is no responsive meta tag here -->
+
+
+    <title>Bitcoin Candy</title>
+    <link href="img/logo.png" rel="icon" >
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+<div class="navbar my-navbar  navbar-fixed-top">
+
+    <a class="navbar-brand my-brand visible-sm"><img src="img/top_logo.png"></a>
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand my-brand hidden-sm" style="text-align: center">
+                <img style="display: inline-block;" src="img/top_logo.png">
+            </a>
+			<a title="wallet download" class="navbar-brand my-brand hidden-sm"
+               href="https://github.com/bitcoincandyofficial/bitcoincandy/releases">
+                <img style="display: inline-block;width: 30px ;height: 30px; margin-left: 20px;" src="img/download.png">
+            </a>
+		
+			
+			
+        </div>
+        <div class="navbar-collapse collapse" role="navigation">
+
+            <ul class="nav navbar-nav navbar-right my-nav">
+                <li><a id="home-btn" class="violet" href="#home">HOME</a></li>
+				                <li><a id="team-btn" href="./whitepaper.pdf">WHITEPAPER</a></li>
+                <li><a id="news-btn" href="#news">NEWS</a></li>
+                <li><a id="feature-btn" href="#feature">FEATURES</a></li>
+                <li><a id="roadmap-btn" href="#roadmap">ROADMAP</a></li>
+                <li><a id="faq-btn" href="#faq">FAQ</a></li>
+				<li><a id="support-btn" href="#support">SUPPORT</a></li>
+
+<!--				
+                <li class="li-cn"><a  href="http://cdy.one/index_CN.html">中文</a></li>
+                <li class="li-line hidden-sm hidden-xs">
+                    <a><i class="line"></i></a>
+                </li>
+                <li class="li-en"><a class="violet" href="http://cdy.one/index.html">EN</a></li>
+-->				
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="banner">
+    <div class="container">
+		<div id="home">
+        </div>
+        <img class="big-logo" src="img/big-logo.png">
+        <br>
+        <!--   <img class="font-logo" src="img/font-logo.png"> -->
+        <h4 class="banner_h4">Help Bitcoin (Cash) Great Again</h4>
+    </div>
+</div>
+
+<div class="news">
+    <div class="container">
+		<div id="news"></div>
+        <h2 class="feature_title">NEWS</h2>
+		<p class="news-row" style="color:red;" >
+		2019/03/04: CDY will perform a hard fork upgrade at block height 758000(about March 14, 2019, UTC time) to issue 1 billion cdy to compensate the losses incurred by attacker in the exchange and pool. Links: <a href="https://github.com/bitcoincandyofficial/bitcoincandy/releases" target="_blank">full-node wallet</a></a>.
+		</p>
+		
+		<p class="news-row" >
+		2018/08/20: CDY will perform a hard fork upgrade at block height 656960(about September 1st, UTC time). Mining algorithm has been upgraded to deal with the huge hashrate fluctuations. As the mining algorithm will no longer be compatible with ZEC's Equihash algorithm, miners need to upgrade their mining program after upgrade. Links: <a href="https://github.com/bitcoincandyofficial/bitcoincandy/releases" target="_blank">full-node wallet</a>, <a href ="https://github.com/bitcoincandyofficial/bitcoincandy-miner">mining program</a>.
+		</p>
+		
+		
+
+		<p class="news-row" >
+		2018/05/10：CDY will perform a hard fork upgrade at May 15th, this upgrade includes DAA optimization and some features and fixes port from Bitcoin Cash <a href="https://github.com/bitcoincashorg/spec/blob/master/may-2018-hardfork.md" target="_blank">MAY 2018 NETWORK UPGRADE</a>. Details: <a href="https://github.com/bitcoincandyofficial/bitcoincandy/blob/master/doc/release-notes/release-notes-0.17.1.md" target="_blank">release note</a>. Please <a href="https://github.com/bitcoincandyofficial/bitcoincandy/releases/tag/0.17.1" target="_blank">update</a> the node as soon as possible.
+		</p>
+		
+		
+		
+		<p class="news-row" >
+		2018/04/14：CDY will perform a hard fork upgrade at block height 573123 (about April 20, UTC time). The updated DAA algorithm can deal with fluctuations of hashrate much better. Please <a href="https://github.com/bitcoincandyofficial/bitcoincandy/releases/tag/0%2C16.2.8" target="_blank">update</a> the node as soon as possible.
+		</p>
+		
+
+		<p class="news-row">
+		2018/03/06：<a href="https://btc-alpha.com/exchange/CDY_BTC/" target="_blank">BTC-Alpha</a>launched CDY trade pair.
+		</p>
+		<p class="news-row">
+		2018/03/05：<a href="http://block.cdy.one" target="_blank">CDY block explorer</a> published.
+		</p>
+		
+		<!--
+		<p class="news-row">
+		2018/03/01：<a href="http://www.vvpool.com" target="_blank">vvpool</a> launched CDY mining pool.
+		</p>
+		-->
+
+		<p class="news-row">
+		2018/02/09：<a href="http://bitpie.com" target="_blank">Bitpie wallet</a> officially support CDY
+		</p>
+		<p class="news-row">
+		2018/02/08：Change to top-level domain cdy.one
+		</p>
+		<p class="news-row">
+		2018/02/08：Bitcoin Candy mainnet officially released，<a href="https://github.com/bitcoincandyofficial/bitcoincandy" target="_blank">source code</a>，<a href="https://github.com/bitcoincandyofficial/bitcoincandy/releases" target="_blank">wallet</a>，<a href="https://github.com/bitcoincandyofficial/bitcoincandy-miner" target="_blank">mining software</a>，<a href="http://pool.cdy.one" target="_blank">pool</a>.
+		</p>
+		<p class="news-row">
+		2018/01/13：<a href="https://www.coinex.com/trading?currency=bch&dest=cdy" target="_blank">CoinEx</a> launched CDY trade pair.
+		</p>
+	</div>
+</div>
+
+
+<div class="about">
+    <div class="container">
+		<div id="about"></div>
+ 
+		<h2 class="feature_title">ABOUT</h2>
+
+		<p class="about_p" style="line-height: 1.8">
+		Among the many questions about bitcoin, the rapid development of quantum computers is like a dark cloud far away from the horizon, which seems distant but disturbing.
+		</p>
+		<!--
+		<p class="about_p" style="line-height: 1.8">
+		2017年8月1日，比特币最终以分裂的方式结束了历时数年的扩容之争，原比特币分裂为比特币现金和(新)比特币两条链。此后，又有多个团队分叉比特币，进行不同技术方向或应用场景下的探索。
+		</p>
+		-->
+        <p class="about_p" style="line-height: 1.8">
+		Bitcoin Candy team will fork <b>Bitcoin Cash</b> at block height 512666, after which  some of the improvements proposed by the community will be added to the forked chain. On this new chain we are going to explore quantum-resistant solution of bitcoin based on our cryptography background.
+		</p>
+		<!--
+		<p class="about_p" style="line-height: 1.8">
+		新链将被命名为"比特币糖果",英文"Bitcoin Candy",缩写"CDY"。
+		</p>
+		-->
+		<p class="about_p" style="line-height: 1.8">
+		Only when we put talk into action can we make bitcoin (cash) great again
+		</p>
+        
+		
+
+	</div>
+</div>
+
+
+
+
+
+<div class="feature">
+    <div class="container">
+        <div id="feature"></div>
+        <h2 class="feature_title">Features</h2>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="feature-yuan">
+                    <span>01</span>
+                </div>
+                <p class="feature_title2">Fast</p>
+				<p class="feature_p">
+                    block interval adjusted to two minutes</p>
+
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="feature-yuan">
+                    <span>02</span>
+                </div>
+                <p class="feature_title2">Lower threshold</p>
+				<p class="feature_p">
+                    Total supply adjusted to 21 billion</p>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-sm-6 col-md-3">
+                <div class="feature-yuan">
+                    <span>03</span>
+                </div>
+                <p class="feature_title2">Decentralization</p>
+				<p class="feature_p">
+                    Equihash(GPU) PoW algorithm </p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="feature-yuan">
+                    <span>04</span>
+                </div>
+                <p class="feature_title2">Safer</p>
+				<p class="feature_p">
+                    No segwit<br>Quantum-resistant exploration</p>
+            </div>
+        </div>
+    
+		<div class="compare" style="margin-top:50px">
+		<table class="table table-striped">
+			<tr>
+				<td>Hardfork height</td>
+				<td>512666（Bitcoin Cash）</td>
+			</tr>
+			<tr>
+				<td>Estimated hardfork time</td>
+				<td>2018/01/13</td>
+			</tr>
+			
+			<tr>
+				<td>PoW algorithm</td>
+				<td>EQUIHASH(144,5)</td>
+			</tr>
+			<tr>
+				<td>Supply</td>
+				<td>21 billion</td>
+			</tr>
+			<tr>
+				<td>Distribution ratio</td>
+				<td> 1:1000</td>
+			</tr>
+			<tr>
+				<td>pre-mine</td>
+				<td>Yes, 1% of supply will be pre-mined</td>
+			</tr>			<tr>
+				<td>Block interval</td>
+				<td>2 minutes</td>
+			</tr>
+
+			<tr>
+				<td>Replay protection</td>
+				<td>Yes</td>
+			</tr>
+			<tr>
+				<td>Block size</td>
+				<td>32M</td>
+			</tr>
+			<tr>
+				<td>Segwit</td>
+				<td>No</td>
+			</tr>
+			<tr>
+				<td>Difficulty adjustment</td>
+				<td>CDY-Adapted LWMA</td>
+			</tr>
+
+		</table>
+		</div>
+	</div>
+</div>
+
+<div class="roadmap">
+    <div class="container">
+        <div id="roadmap"></div>
+        <div class="roadmap-bg-zone">
+        </div>
+        <h2 class="feature_title" style="color: #fff">ROADMAP</h2>
+        <div id="carousel-example-generic" class="carousel slide hidden-xs hidden-sm" data-ride="carousel" style="height: 316px;overflow: hidden">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="row">
+                        
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2018.01.13</p>
+                            <p class="roadmap_p">Fork at block height 512666</p>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">end of January,2018</p>
+                            <p class="roadmap_p">Mainnet launch<br></p>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2018.7-2018.12</p>
+                            <p class="roadmap_p">Quantum-resistant solution</p>
+                        </div>
+						<div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2019</p>
+                            <p class="roadmap_p">Ecology Building</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="carousel-example-generic2" class="carousel slide visible-sm " data-ride="carousel" style="height: 316px;overflow: hidden">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic2" data-slide-to="0"></li>
+                <li data-target="#carousel-example-generic2" data-slide-to="1" class="active"></li>
+                <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2018.01.01</p>
+                            <p class="roadmap_p">Project established</p>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2018.01.04</p>
+                            <p class="roadmap_p">Official website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" active>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2018.01.13</p>
+                            <p class="roadmap_p">Fork at block height 512666</p>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">end of January,2018</p>
+                            <p class="roadmap_p">Mainnet launch<br></p>
+                        </div>
+                    </div>
+                </div>
+				<div class="item">
+					<div class="row">
+						<div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2018.7-</p>
+                            <p class="roadmap_p">Quantum-resistant solution</p>
+                        </div>
+						<div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2019</p>
+                            <p class="roadmap_p">Ecology Building</p>
+                        </div>
+					</div>
+				</div>
+            </div>
+        </div>
+        <div id="carousel-example-generic3" class="carousel slide visible-xs " data-ride="carousel" style="height: 316px;overflow: hidden">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic3" data-slide-to="0"></li>
+                <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic3" data-slide-to="2" class="active"></li>
+                <li data-target="#carousel-example-generic3" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic3" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic3" data-slide-to="5"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2018.01.01</p>
+                            <p class="roadmap_p">Project established</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="item">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2018.01.04</p>
+                            <p class="roadmap_p">Official website</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="item active">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2018.01.13</p>
+                            <p class="roadmap_p">Fork at block height 512666</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="item">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">end of January,2018</p>
+                            <p class="roadmap_p">Mainnet launch<br></p>
+                        </div>
+                    </div>
+                </div>
+				<div class="item">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2018.7-</p>
+                            <p class="roadmap_p">Quantum-resistant solution</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="item">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <p class="roadmap-time">2019</p>
+                            <p class="roadmap_p">Ecology Building</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="faq">
+    <div class="container">
+        <div id="faq"></div>
+        <h2 class="feature_title">FAQ</h2>
+        <div class="row">
+            <div class="col-sm-12" id="faq-zone">
+                <div class=" faq-zone">
+                    <div class="faq-title">
+                        <div class="faq-dian">
+                            <i></i>
+                        </div>
+                        <div class="title-p">
+                            <p> What is CDY?</p>
+                        </div>
+                    </div>
+                    <div class="faq-a">
+                        Bitcoin Candy(CDY) is a new chain forked from <b>Bitcoin Cash</b> at the height of 512666. The original BCH holders will be compensated with 1000 CDY for every BCH held.
+						New features will be added to the forked chain and we will explore quantum-resistant solution on this chain.
+	
+					</div>
+                </div>
+                <div class=" faq-zone">
+                    <div class="faq-title">
+                        <div class="faq-dian">
+                            <i></i>
+                        </div>
+                        <div class="title-p">
+                            <p>What is quantum-resistant thing?</p>
+                        </div>
+                    </div>
+                    <div class="faq-a" style="">
+					
+					In the past few years, D-Wave, IBM, Intel and other technological giants invest a lot of manpower and resources to increase research and development of quantum computers, i.e., Google have embedded D-Wave quantum computer into its cloud platform; the research team under Prof. Pan Weijian in Chinese University of Technology have made breakthrough achievements in quantum communications. Under such circumstance, the quantum age will no longer stay in science fiction conjecture (perhaps 5-10 years will come).
+					<br>The development of quantum computer will not only bring great changes to people's lives, but also pose a serious threat to traditional public key cryptography. Public key cryptosystems such as ECDSA and RSA will be solved in polynomial time by these quantum computers. So, virtual currency like Bitcoin which use ECDSA as a signature algorithm will become unsafe. To find post-quantum digital signature algorithm is of vital important.
+					<br>Our team has a deep post-quantum cryptography background and will conduct research and experiments on the CDY chain for practical public key signature algorithms in the post-quantum-era blockchain.
+					
+                </div>
+				
+				
+                <div class=" faq-zone">
+                    <div class="faq-title">
+                        <div class="faq-dian">
+                            <i></i>
+                        </div>
+                        <div class="title-p">
+                            <p>Why forked from BCH, can BTC holders get free CDY?</p>
+                        </div>
+                    </div>
+                    <div class="faq-a" style=""><!--display: none-->
+                        On August 1, 2017, Bitcoin community finally ended its years-long expansion war by splitting the original bitcoin into two chains, Bitcoin cash (BCH) and segwit Bitcoin (inheriting BTC ticker).
+
+						We think BCH is more in line with Satoshi Nakamoto's vision of bitcoin "a peer-to-peer electronic cash system" and will have a brighter future.
+
+						<br>
+						Only who hold BCH at height 512666(about January 13 ) can get free CDY at the rate of 1BCH : 1000CDY.
+                    </div>
+                </div>
+				
+				
+				<div class=" faq-zone">
+                    <div class="faq-title">
+                        <div class="faq-dian">
+                            <i></i>
+                        </div>
+                        <div class="title-p">
+                            <p>What is the total supply of CDY?</p>
+                        </div>
+                    </div>
+                    <div class="faq-a" style=""><!--display: none-->
+                        CDY will have a total supply of 21 billion, of which 1% will be pre-mined.
+                    </div>
+                </div>
+				
+				<div class=" faq-zone">
+                    <div class="faq-title">
+                        <div class="faq-dian">
+                            <i></i>
+                        </div>
+                        <div class="title-p">
+                            <p>How to claim my free CDY?</p>
+                        </div>
+                    </div>
+                    <div class="faq-a" style=""><!--display: none-->
+                        To get free CDY, you need to hold Bitcoin Cash before height 512666 (about January 13).
+
+						<br>1.If your BCH is stored in a wallet where you can control private key yourself, you will definitely get free CDY. Just waiting for the wallet developer to provide feature to claim.
+
+						<br>2.If your BCH is stored in the exchange, the exchange will receive free CDY, please pay attention whether the exchange will provide CDY's collection function or not.If the exchange you store BCH does not support CDY, to avoid the loss of assets it is recommended to withdraw BCH to a wallet which you can contral private key or to exchanges that support CDY.
+                    </div>
+					<br><br>
+                </div>
+						
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="support">
+    <div class="container">
+        <div id="support"></div>
+        <h2 class="feature_title">SUPPORT</h2>
+        <div class="row" style="text-align: center">
+            <div class="support_tittle">Exchanges</div>
+
+			<a href="https://www.coinex.com/" class="support_a">
+                <img src="img/sp/sp_coinex.png">
+            </a>
+			<a href="https://btc-alpha.com/exchange/CDY_BTC/" class="support_a">
+                <img src="img/sp/btc-alpha.png">
+            </a>
+
+        </div>
+		
+        
+        <div class="row" style="text-align: center">
+            <div class="support_tittle">Wallets</div>
+			
+			<a href="https://github.com/bitcoincandyofficial/bitcoincandy/releases" class="support_a">
+                <img src="img/sp/cdywallet.png">
+            </a>
+            <a href="http://bitpie.com/" class="support_a">
+                <img src="img/sp/sp_bitpie.png">
+            </a>
+        </div>
+		
+		<div class="row" style="text-align: center">
+            <div class="support_tittle">Pools</div>
+            <a href="http://pool.cdy.one" class="support_a">
+                <img src="img/sp/cdypool.png">
+            </a>
+			
+			<a href="https://www.waterparkmining.com" class="support_a">
+                <img src="img/sp/sp_wpm_pool.png">
+            </a>
+			<!--
+			<a href="http://www.vvpool.com" class="support_a">
+                <img src="img/sp/sp_vvpool.png">
+            </a>
+			-->
+        </div>		
+	</div>
+
+</div>
+
+
+
+
+
+
+
+<div style="width: 100%;background: #434343;padding-bottom: 20px;padding-top: 20px;text-align: center;">
+    <div> 
+        <a class="" target="_blank" href="https://t.me/BitcoinCandyOfficial">
+            <img class="resource-img" src="img/telegram.png">
+        </a>
+        
+        <a class="" target="_blank" href="https://weibo.com/u/6447547595">
+            <img class="resource-img" src="img/weibo.png">
+        </a>
+		<a class="" target="_blank" href="https://twitter.com/BitcoinCandyCDY">
+            <img class="resource-img" src="img/twitter.png">
+        </a>
+		<a class="" target="_blank" href="https://github.com/bitcoincandyofficial">
+            <img class="resource-img" src="img/github.png">
+        </a>
+        <a class="" target="_blank"
+           href="https://medium.com/@BitcoinCandy">
+            <img class="resource-img" src="img/medium.png">
+        </a>
+
+		
+        <a class="" target="_blank" href="http://block.cdy.one">
+            <img class="resource-img" src="img/blockchain-brower.png">
+        </a>      
+        
+    </div>
+
+    <div class="bottom-line" style="width: 100%;padding-bottom: 20px;padding-top: 20px;text-align: center;">
+        <a style="color: #ffffff;font-size: 16px">Copyright © 2018 BitcoinCandy All rights reserved</a>        
+        <a style="color: #ffffff;margin-left: 20px;margin-right: 20px;font-size: 16px">Email:
+            bitcoincandy.cdy@gmail.com</a>
+    </div>
+</div>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script>
+    $(document).ready(function () {
+        
+        
+        
+        $(".my-nav a").click(function () {
+            $(".my-nav a").removeClass("violet");
+            $(this).addClass("violet");
+        });
+        
+       
+    });
+</script>
+
+
+</body>
+</html>
