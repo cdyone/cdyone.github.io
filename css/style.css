@@ -172,6 +172,11 @@ body {
 }
 
 
+.donate {
+    text-align: center;
+    background: #f0f0f0;
+    padding-bottom: 80px;
+}
 
 .about {
     text-align: center;
